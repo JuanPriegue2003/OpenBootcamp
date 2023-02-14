@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones y transiciones en CSS</title>
+    <link rel="stylesheet" href="Animaciones1.css">
+</head>
+<body>
+    <button class="btn-modern">Button</button>
+    <style>
+        body{
+    display:flex;
+    justify-content : center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+
+
+}
+
+.btn-modern{
+    background-color: green;
+    color:white;
+
+}
+
+.btn-modern:hover{
+    transform: translateY(-5px);
+    color:red;
+    background-color: blue;
+    transition: 0.4s;
+    box-shadow: 10px 5px 5px rgb(206, 194, 194)
+}
+    </style>
+</body>
+</html>
