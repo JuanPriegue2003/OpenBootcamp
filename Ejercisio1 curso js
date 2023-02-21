@@ -1,0 +1,1 @@
+const lista_ejercicio = [ "Juan", 20, true,Date(23/0/03),"El apostol de los leprosos,William Humnemberg"];
