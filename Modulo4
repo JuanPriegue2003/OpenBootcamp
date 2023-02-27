@@ -1,0 +1,23 @@
+// Ejercisio Modulo 4
+let nombre = "Juan"
+let apellido = "Priegue"
+let estudiante = "Juan Priegue"
+let estudianteMayus = "JUAN PRIEGUE"
+let estudianteMinus = "juan priegue"
+let num_estudiantes = estudiante.length
+let primera_letra_nombre = nombre[0];
+let ultima_letra_apellido = apellido.slice(-1);
+let Borrar_espacios_estudiante = estudiante.replaceAll(' ', '');
+let Nombre_included = estudiante.includes("Juan")
+
+
+
+
+
+
+//Prurbas
+console.log(num_estudiantes);
+console.log(primera_letra_nombre);
+console.log(ultima_letra_apellido);
+console.log(Borrar_espacios_estudiante);
+console.log(Nombre_included);
