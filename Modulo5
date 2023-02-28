@@ -1,0 +1,14 @@
+// Ejercisio Modulo 5 
+
+let altura_cm = 186
+let altura_mts = 1.86
+let peso_kg = 76.4
+let altura_redondeada_up = altura_mts.toFixed(1);
+let altura_redondeada_down = Math.floor(peso_kg);
+
+
+
+//Pruebas
+console.log(altura_redondeada_up);
+console.log(altura_redondeada_down);
+let el_maximo_valor=Number.MAX_VALUE
