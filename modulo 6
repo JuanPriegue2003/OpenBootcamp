@@ -1,0 +1,38 @@
+const Lista_supermercado = [
+    "turron","papas fritas","caramelo","arroz","masacara peronista"
+    ]
+    //Agregar objeto
+    Lista_supermercado.splice(0, 0, "Aceite de Girasol")
+    console.log(Lista_supermercado);
+    //Eliminar objeto recien añadido
+    Lista_supermercado.splice(0,1)
+    console.log(Lista_supermercado);
+
+const peliculas_favoritas = [
+    {titulo:"King fu panda" ,director:"Juansito",Año: 2012},
+    {titulo: "Como entrenar a tu dragón",director:"Raul",Año:2007},
+    {titulo: "E.T" ,director:"Ramón",Año:1937}
+]
+// Una nueva lista posteriores al 1 de enero de 2010 (filter)
+const newArray = peliculas_favoritas.filter(valor => valor.Año > 2010)
+console.log(newArray);
+
+//Una nueva lista de películas original (utilizando map)
+const newArray2 = peliculas_favoritas.map((element,indice) =>{
+return `${indice+1}-${element.director}`;
+})
+console.log(newArray2);
+
+// títulos de la lista de películas original (utilizando map)
+const newArray3 = peliculas_favoritas.map((element,indice) =>{
+    return `${indice+1}-${element.titulo}`;
+    })
+    console.log(newArray3);
+
+// Lista con directores y titulos .concat
+newArray4 = newArray3.concat(newArray2);
+console.log(newArray4);
+
+// lista de directores y la lista de los títulos (utilizando el factor de propagación)
+let lista4 = [...newArray2,...newArray3];
+console.log(lista4);
