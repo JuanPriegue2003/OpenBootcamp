@@ -1,0 +1,12 @@
+const fecha = new Date()
+const  fecha_nacimiento = new Date (2003, 0, 23)
+console.log(fecha > fecha_nacimiento);
+let mes_nacimiento = (0)
+let año_nacimiento = (2003)
+
+
+
+
+//pruebas
+console.log(fecha);
+console.log(fecha_nacimiento);
